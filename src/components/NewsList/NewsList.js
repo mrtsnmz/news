@@ -29,11 +29,11 @@ const NewsList = (props) => {
 				<h1>{props.title} <span onClick={changeFav}>{fav ? <MdIcons.MdFavorite /> : <MdIcons.MdFavoriteBorder />}</span></h1> :
 				<h1>{props.title}</h1>}
 			<div className="article-list">
-				{props.articles.map((article, index) => {
+				{props.articles ? props.articles.map((article, index) => {
 					return (
 						<NewsCard key={index} article={article}/>
 					)
-				})}
+				}): ''}
 			</div>
 		</>
 	)
