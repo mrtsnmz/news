@@ -16,7 +16,7 @@ const Navbar = () => {
 
 	useEffect(() => {
 		async function fetchSources() {
-			const response = await fetch('https://newsapi.org/v2/sources?apiKey=ae9b9dc051ee4b0fa9867ba0521e8852');
+			const response = await fetch('https://newsapi.org/v2/sources?apiKey=18cd1d40614f4e3aaaf5e34b7d60ad0b');
 			const body = await response.json();
 			for (const item of body.sources) {
 				let minFavIndex = 1;

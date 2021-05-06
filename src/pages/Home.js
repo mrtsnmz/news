@@ -6,7 +6,7 @@ const Home = () => {
 
     useEffect(() => {
 		async function fetchArticles() {
-			const response = await fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=ae9b9dc051ee4b0fa9867ba0521e8852');
+			const response = await fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=18cd1d40614f4e3aaaf5e34b7d60ad0b');
 			const body = await response.json();
 			setArticles(body.articles);
 		}
